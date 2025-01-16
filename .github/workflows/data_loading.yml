@@ -1,0 +1,30 @@
+name: Data loading
+
+on:
+  push:  # Déclenche le workflow lors d'un push sur le dépôt
+    branches:
+      - main  # Le workflow se déclenche sur des push vers la branche 'main' 
+  workflow_dispatch:
+
+jobs:
+  data-analyis:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - uses: actions/checkout@v3
+      
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.9'
+      - name: Install dependencies
+        run: pip install matplotlib pandas 
+          
+      - name: Run Movielens Analysis
+        run: python data_viz_script.py
+          
+      - name: Upload Report
+        uses: actions/upload-artifact@v3
+        with:
+          name: movielens_report
+          path: movielens_report.html
