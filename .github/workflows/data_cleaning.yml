@@ -27,7 +27,7 @@ jobs:
 
       - name: Clean and Compress Data to Parquet
         run: |
-          python data_cleaning_script.py  # Exécuter le script pour nettoyer et compresser les données en Parquet
+          python scripts/data_cleaning_script.py  # Exécuter le script pour nettoyer et compresser les données en Parquet
       
       - name: Upload Parquet file
         uses: actions/upload-artifact@v3

@@ -33,7 +33,7 @@ jobs:
       # Étape 4: Exécuter le script de benchmark
       - name: Run Benchmark Script
         run: |
-          python benchmark_script.py
+          python scripts/benchmark_script.py
                  
       # Étape 5: Ajouter les résultats dans les artefacts GitHub (facultatif)
       - name: Upload benchmark results

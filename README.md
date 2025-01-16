@@ -33,7 +33,7 @@ data_movie_pipeline_CI-CD/
 │   └── data_vizualising.py     # Visualisations et rapports
 ├── .gitignore              # Fichiers et dossiers à exclure du suivi Git
 ├── README.md               # Documentation du projet
-
+```
 ---
 
 ## Cloner le dépôt en local
