@@ -21,4 +21,4 @@ jobs:
         run: pip install matplotlib pandas 
           
       - name: Run Movielens Analysis
-        run: python scripts/data_loading.py
+        run: python scripts/data_loading_script.py
