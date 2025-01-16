@@ -3,7 +3,7 @@ from io import BytesIO
 import matplotlib.pyplot as plt
 from datetime import datetime
 import pandas as pd
-from data_loading import load_movie_data
+from data_loading_script import load_movie_data
 
 def fetch_movie_data():
     """
