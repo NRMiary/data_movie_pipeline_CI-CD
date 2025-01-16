@@ -41,7 +41,7 @@ Clonez le dépôt dans votre environnement local à l'aide de la commande suivan
 
 ```bash
 git clone https://github.com/NRMiary/data_movie_pipeline_CI-CD.git
-
+```
 ---
 
 ## Workflows GitHub Actions
