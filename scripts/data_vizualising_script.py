@@ -74,17 +74,35 @@ def generate_html_report(genre_data, year_data):
         <title>MovieLens Report</title>
         <style>
             body {{ font-family: Arial, sans-serif; margin: 20px; }}
-            .chart-container {{ width: 800px; height: 400px; margin: 20px 0; }}
+            .chart-container {{
+                width: 800px;
+                margin: 30px auto; /* Augmenter l'espacement vertical entre les graphiques */
+                padding: 25px; /* Augmenter l'espacement interne */
+                border: 1px solid #ddd;
+                border-radius: 8px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                background-color: #fff;
+            }}
+            .chart-container h2 {{
+                text-align: center;
+                margin-bottom: 25px; /* Espacement plus grand sous le titre */
+                color: #333;
+            }}
+            .chart-container img {{
+                display: block;
+                margin: 0 auto;
+                max-width: 100%;
+                height: auto;
+            }}
         </style>
     </head>
     <body>
-        <h1>MovieLens Report - {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}</h1>
+        <h1 style="text-align: center; font-size: 24px; margin-bottom: 40px;">MovieLens Report - {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}</h1>
         
         <div class="chart-container">
             <h2>Movies by Genre</h2>
             <img src="data:image/png;base64,{genre_base64}" alt="Genre Chart">
         </div>
-        <br>
         <div class="chart-container">
             <h2>Movies by Year</h2>
             <img src="data:image/png;base64,{year_base64}" alt="Year Chart">
