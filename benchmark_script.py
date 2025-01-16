@@ -3,7 +3,7 @@ import psutil
 from memory_profiler import memory_usage
 from reportlab.lib.pagesizes import letter
 from reportlab.pdfgen import canvas
-from data_loading import load_movie_data
+from data_loading_script import load_movie_data
 
 # Transformation des données
 def data_transformation(df):
