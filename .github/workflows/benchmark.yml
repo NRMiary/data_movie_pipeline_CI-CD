@@ -34,15 +34,8 @@ jobs:
       - name: Run Benchmark Script
         run: |
           python benchmark_script.py
-          
-      # Étape 5: Sauvegarder les résultats dans un fichier
-      - name: Save benchmark results
-        run: |
-          # Exemple : Créer un fichier de résultats avec l'heure actuelle
-          echo "Benchmark terminé à $(date)" > result_benchmark.txt
-          cat result_benchmark.txt
-          
-      # Étape 6: Ajouter les résultats dans les artefacts GitHub (facultatif)
+                 
+      # Étape 5: Ajouter les résultats dans les artefacts GitHub (facultatif)
       - name: Upload benchmark results
         uses: actions/upload-artifact@v3
         with:

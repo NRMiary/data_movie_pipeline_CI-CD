@@ -7,8 +7,6 @@ on:
     types:
       - completed  # Ce workflow s'exécute lorsque le workflow "Data loading" est terminé
 
-
-
 jobs:
   clean_and_compress:
     runs-on: ubuntu-latest  # Environnement Linux

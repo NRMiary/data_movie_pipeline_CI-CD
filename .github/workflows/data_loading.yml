@@ -21,10 +21,4 @@ jobs:
         run: pip install matplotlib pandas 
           
       - name: Run Movielens Analysis
-        run: python data_viz_script.py
-          
-      - name: Upload Report
-        uses: actions/upload-artifact@v3
-        with:
-          name: movielens_report
-          path: movielens_report.html
+        run: python data_loading.py
